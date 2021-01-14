@@ -9,19 +9,18 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
+    //sets the amount of columns and width
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())]
     
     var body: some View {
         LazyVGrid(columns: columns) {
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            // loop through the model to data for each object
+            ForEach(MockData.frameworks, id: \.id)  { framework in
+                // loads each framework with image and title
+                FrameworkTitleView(framework: framework)
+            }
         }
         
     }
@@ -30,19 +29,22 @@ struct FrameworkGridView: View {
 struct FrameworkGridView_Previews: PreviewProvider {
     static var previews: some View {
         FrameworkGridView()
+            .preferredColorScheme(.dark)
     }
 }
 
 struct FrameworkTitleView: View {
-    let name: String
-    let imageName: String
+    // passing in framework for each iteration
+    let framework: Framework
     
     var body: some View {
         VStack {
-            Image(imageName)
+            // obtains imageName from the model
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90,height: 90)
-            Text(name)
+            // obtains name from the model
+            Text(framework.name)
                 .font(.title3)
                 .fontWeight(.semibold)
                 .scaledToFit()
