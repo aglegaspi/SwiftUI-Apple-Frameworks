@@ -25,7 +25,6 @@ struct FrameworkGridView: View {
                     }
                 }
             }
-        
             .navigationTitle("Apple Frameworks")
         }
         
