@@ -15,13 +15,20 @@ struct FrameworkGridView: View {
                                GridItem(.flexible())]
     
     var body: some View {
-        LazyVGrid(columns: columns) {
-            // loop through the model to data for each object
-            ForEach(MockData.frameworks, id: \.id)  { framework in
-                // loads each framework with image and title
-                FrameworkTitleView(framework: framework)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    // loop through the model to data for each object
+                    ForEach(MockData.frameworks, id: \.id)  { framework in
+                        // loads each framework with image and title
+                        FrameworkTitleView(framework: framework)
+                    }
+                }
             }
+        
+            .navigationTitle("Apple Frameworks")
         }
+        
         
     }
 }
@@ -50,6 +57,7 @@ struct FrameworkTitleView: View {
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
         }
+        .padding()
         
     }
     
