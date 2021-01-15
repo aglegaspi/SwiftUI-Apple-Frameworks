@@ -12,7 +12,9 @@
 		EC1981AB25AE85BF0078D704 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1981AA25AE85BF0078D704 /* Preview Assets.xcassets */; };
 		EC1981B425AE87070078D704 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1981B325AE87070078D704 /* Framework.swift */; };
 		EC1981B825AE88230078D704 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1981B725AE88230078D704 /* FrameworkGridView.swift */; };
+		EC67E3BC25B252EA0038ABB8 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */; };
 		EC6EE8E325B13B1700D716EF /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */; };
+		EC6EE8E625B13D4A00D716EF /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6EE8E525B13D4A00D716EF /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		EC1981AC25AE85BF0078D704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1981B325AE87070078D704 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		EC1981B725AE88230078D704 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		EC6EE8E525B13D4A00D716EF /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				EC1981A325AE85BD0078D704 /* SwiftUI_Apple_FrameworksApp.swift */,
 				EC1981A725AE85BF0078D704 /* Assets.xcassets */,
 				EC1981B725AE88230078D704 /* FrameworkGridView.swift */,
+				EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */,
 				EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */,
+				EC6EE8E525B13D4A00D716EF /* AFButton.swift */,
 				EC1981AC25AE85BF0078D704 /* Info.plist */,
 				EC1981A925AE85BF0078D704 /* Preview Content */,
 				EC1981B325AE87070078D704 /* Framework.swift */,
@@ -147,7 +153,9 @@
 				EC6EE8E325B13B1700D716EF /* FrameworkDetailView.swift in Sources */,
 				EC1981B825AE88230078D704 /* FrameworkGridView.swift in Sources */,
 				EC1981B425AE87070078D704 /* Framework.swift in Sources */,
+				EC6EE8E625B13D4A00D716EF /* AFButton.swift in Sources */,
 				EC1981A425AE85BD0078D704 /* SwiftUI_Apple_FrameworksApp.swift in Sources */,
+				EC67E3BC25B252EA0038ABB8 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

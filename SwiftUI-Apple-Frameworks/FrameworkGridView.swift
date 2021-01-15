@@ -9,23 +9,35 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     //sets the amount of columns and width
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())]
     
     var body: some View {
+        
         NavigationView {
+            
             ScrollView {
+                
                 LazyVGrid(columns: columns) {
+                    
                     // loop through the model to data for each object
                     ForEach(MockData.frameworks, id: \.id)  { framework in
                         // loads each framework with image and title
                         FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
             }
             .navigationTitle("Apple Frameworks")
+            .sheet(isPresented: $viewModel.isShowingDetailView, content: {
+                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView)
+            })
         }
         
         
@@ -40,15 +52,18 @@ struct FrameworkGridView_Previews: PreviewProvider {
 }
 
 struct FrameworkTitleView: View {
+    
     // passing in framework for each iteration
     let framework: Framework
     
     var body: some View {
         VStack {
+            
             // obtains imageName from the model
             Image(framework.imageName)
                 .resizable()
                 .frame(width: 90,height: 90)
+            
             // obtains name from the model
             Text(framework.name)
                 .font(.title3)
