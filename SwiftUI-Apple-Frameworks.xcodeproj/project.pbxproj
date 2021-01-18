@@ -47,6 +47,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC14255625B54C9200AB0F0F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EC14255825B54CA700AB0F0F /* FrameworkGridView */,
+				EC14255725B54C9A00AB0F0F /* FrameworkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EC14255725B54C9A00AB0F0F /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		EC14255825B54CA700AB0F0F /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */,
+				EC1981B725AE88230078D704 /* FrameworkGridView.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		EC14255925B54CD700AB0F0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC1981B325AE87070078D704 /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC14255A25B54CEE00AB0F0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC14255C25B54D0F00AB0F0F /* View */,
+				EC14255B25B54CFB00AB0F0F /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC14255B25B54CFB00AB0F0F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EC6EE8E525B13D4A00D716EF /* AFButton.swift */,
+				EC14255325B54B9000AB0F0F /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EC14255C25B54D0F00AB0F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC14255025B54B3300AB0F0F /* FrameworkTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC14255D25B54D2100AB0F0F /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC48BE6E25B3F8A300F172AE /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
 		EC19819725AE85BD0078D704 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +134,14 @@
 		EC1981A225AE85BD0078D704 /* SwiftUI-Apple-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC14255D25B54D2100AB0F0F /* UIKit Components */,
+				EC14255A25B54CEE00AB0F0F /* Views */,
+				EC14255925B54CD700AB0F0F /* Model */,
+				EC14255625B54C9200AB0F0F /* Screens */,
 				EC1981A325AE85BD0078D704 /* SwiftUI_Apple_FrameworksApp.swift */,
 				EC1981A725AE85BF0078D704 /* Assets.xcassets */,
-				EC1981B725AE88230078D704 /* FrameworkGridView.swift */,
-				EC14255025B54B3300AB0F0F /* FrameworkTitleView.swift */,
-				EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */,
-				EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */,
-				EC14255325B54B9000AB0F0F /* XDismissButton.swift */,
-				EC48BE6E25B3F8A300F172AE /* SafariView.swift */,
-				EC6EE8E525B13D4A00D716EF /* AFButton.swift */,
 				EC1981AC25AE85BF0078D704 /* Info.plist */,
 				EC1981A925AE85BF0078D704 /* Preview Content */,
-				EC1981B325AE87070078D704 /* Framework.swift */,
 			);
 			path = "SwiftUI-Apple-Frameworks";
 			sourceTree = "<group>";
