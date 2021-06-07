@@ -18,6 +18,7 @@
 		EC67E3BC25B252EA0038ABB8 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */; };
 		EC6EE8E325B13B1700D716EF /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */; };
 		EC6EE8E625B13D4A00D716EF /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6EE8E525B13D4A00D716EF /* AFButton.swift */; };
+		ECEEEF79266EE5930075EB37 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEEF78266EE5930075EB37 /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EC67E3BB25B252EA0038ABB8 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		EC6EE8E525B13D4A00D716EF /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		ECEEEF78266EE5930075EB37 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6EE8E225B13B1700D716EF /* FrameworkDetailView.swift */,
+				ECEEEF78266EE5930075EB37 /* FrameworkDetailViewModel.swift */,
 			);
 			path = FrameworkDetailView;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEEEF79266EE5930075EB37 /* FrameworkDetailViewModel.swift in Sources */,
 				EC6EE8E325B13B1700D716EF /* FrameworkDetailView.swift in Sources */,
 				EC1981B825AE88230078D704 /* FrameworkGridView.swift in Sources */,
 				EC14255425B54B9000AB0F0F /* XDismissButton.swift in Sources */,
