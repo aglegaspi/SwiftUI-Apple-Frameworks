@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
+    // injecting the FrameworkDetailView data
     @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
@@ -25,16 +26,21 @@ struct FrameworkDetailView: View {
                 .padding()
             
             Spacer()
-        
-            Button {
-                viewModel.isShowingSafariView = true
-            } label: {
+            
+            // opens the link in the Safari app
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "www.appple.com")!) {
                 AFButton(title: "Learn More")
             }
+            
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                AFButton(title: "Learn More")
+//            }
         }
-        .sheet(isPresented: $viewModel.isShowingSafariView, content: {
-            SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "www.appple.com")!)
-        })
+//        .sheet(isPresented: $viewModel.isShowingSafariView, content: {
+//            SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "www.appple.com")!)
+//        })
     }
 }
 

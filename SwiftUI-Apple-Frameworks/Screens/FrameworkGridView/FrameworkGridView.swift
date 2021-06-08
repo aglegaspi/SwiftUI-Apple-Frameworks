@@ -31,7 +31,10 @@ struct FrameworkGridView: View {
             }
             .navigationTitle("Apple Frameworks")
             .sheet(isPresented: $viewModel.isShowingDetailView, content: {
-                FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewModel.selectedFramework!, isShowingDetailView: $viewModel.isShowingDetailView))
+                // when you tap on a framework you initialize a FrameworkDetailView, we're relying on the data from the previous screen
+                // we use that previous data and create our viewModel here here and inject that into our FrameworkDetailView
+                FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewModel.selectedFramework!,
+                                                                        isShowingDetailView: $viewModel.isShowingDetailView))
             })
         }
         
